@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karate Club INKA Smansel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('https://j.top4top.io/p_3113o1wgx0.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .bio-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .bio-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .bio-container div {
+            max-width: 600px;
+        }
+
+        @media (min-width: 768px) {
+            .bio-container {
+                flex-direction: row;
+            }
+
+            .bio-container:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .social-links {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .social-links img {
+            width: 300px; /* Adjusted size of Instagram profile image to 4:3 ratio */
+            height: 225px; /* Adjusted size of Instagram profile image to 4:3 ratio */
+            object-fit: cover;
+            border-radius: 10px; /* Made the profile image square with rounded corners */
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .social-links p {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .photo-gallery {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling for slideshow */
+            gap: 20px; /* Adjusted gap between images */
+            padding-bottom: 20px; /* Add bottom padding for aesthetics */
+            scrollbar-width: none; /* Hide scrollbar for a cleaner look */
+            -ms-overflow-style: none; /* Hide scrollbar for IE */
+        }
+
+        .photo-gallery::-webkit-scrollbar {
+            display: none; /* Hide scrollbar for WebKit/Blink */
+        }
+
+        .photo-gallery img {
+            width: 300px; /* Adjusted size to match Instagram profile image */
+            height: 225px; /* Adjusted size to match Instagram profile image */
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.5s;
+            border-radius: 10px; /* Rounded corners for images */
+        }
+
+        .photo-gallery img:hover {
+            transform: scale(1.10);
+        }
+
+        .photo-gallery div {
+            text-align: center;
+        }
+
+        .download-link {
+            display: block;
+            text-align: center;
+            margin-top: 5px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.1); /* Added background color for footer */
+        }
+
+        .copyright {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .copyright img {
+            height: 18px;
+            margin-right: 5px;
+        }
+    </style>       
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Karate Club INKA Smansel</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#trainers">Pelatih</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">Media Sosial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h2>Selamat Datang di Karate Club INKA Smansel</h2>
+        <p>Bergabunglah dengan kami dalam mempelajari seni Karate, meningkatkan disiplin, fokus, dan pengendalian diri Anda.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>Tentang Klub Kami</h2>
+        <div class="overlay" style="background-color: rgba(255, 255, 255, 0.8); padding: -10px;">
+           <p> Karate Club INKA Smansel didedikasikan untuk mengajarkan seni bela diri tradisional Karate. Klub kami menawarkan pelatihan untuk semua tingkatan, dari pemula hingga praktisi lanjutan.
+        </div>
+        <img src="https://j.top4top.io/p_3113o1wgx0.jpg" alt="Latihan Karate">
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers">
+        <h2>Pelatih Kami</h2>
+        <div class="bio-container">
+            <img src="https://g.top4top.io/p_3113f4v820.jpg" alt="Pelatih Sensei John Doe">
+            <div>
+                <h3>Senpai Tama</h3>
+                <p>Senpai Tama memiliki lebih dari 20 tahun pengalaman dalam Karate dan telah berkompetisi di berbagai tingkat. Dia memimpin klub dengan dedikasi tinggi dan semangat untuk mengajarkan seni bela diri kepada generasi muda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Galeri</h2>
+        <div class="photo-gallery">
+            <div>
+                <img src="https://c.top4top.io/p_311395x290.jpg" alt="Latihan 1">
+                <p>28 Agustus ujian sabuk di siantan</p>
+                <a href="https://c.top4top.io/p_311395x290.jpg" download="latihan1.jpg" class="download-link">Unduh</a>
+            </div>
+            <div>
+                <img src="https://c.top4top.io/p_311395x290.jpg" alt="Latihan 1">
+                <p>28 Agustus ujian sabuk di siantan</p>
+                <a href="https://c.top4top.io/p_311395x290.jpg" download="latihan1.jpg" class="download-link">Unduh</a>
+            </div>
+            <div>
+                <img src="https://c.top4top.io/p_311395x290.jpg" alt="Latihan 1">
+                <p>28 Agustus ujian sabuk di siantan</p>
+                <a href="https://c.top4top.io/p_311395x290.jpg" download="latihan1.jpg" class="download-link">Unduh</a>
+            </div>
+            <div>
+                <img src="https://c.top4top.io/p_311395x290.jpg" alt="Latihan 2">
+                <p>Latihan teknik tendangan</p>
+                <a href="https://e.top4top.io/p_311395x290.jpg" download="latihan2.jpg" class="download-link">Unduh</a>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/600" alt="Lomba 1">
+                <p>Kejuaraan nasional</p>
+                <a href="https://via.placeholder.com/600" download="lomba1.jpg" class="download-link">Unduh</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Instagram</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/inkai.smansel_?igsh=MzRlODBiNWFlZA==" target="_blank">
+                <img src="https://f.top4top.io/p_3113647400.jpg" alt="Instagram Profile">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+<footer>
+    <p class="">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Copyright.svg/1200px-Copyright.svg.png" alt=>
+        &copy; 2023 Karate Club INKA Smansel
+    </p>
+</footer>
+
+<!-- Background Music -->
+<audio autoplay loop>
+    <source src="https://j.top4top.io/m_3113vucb70.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung elemen audio.
+</audio>
+
+</body>
+</html>
